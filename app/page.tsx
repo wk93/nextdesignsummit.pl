@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <div className="relative">
         <div className="bg-red-cover absolute left-0 right-0 top-0 h-screen -z-[1]" />
-        <Header className="text-nds-black" />
+        <Header className="py-10 text-nds-black" />
         <div className="container">
           <div className="flex w-full items-center justify-center">
             <img src="/theme/logo.svg" className="w-full" />
@@ -32,15 +32,24 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="h-screen"
+        className="-mt-28"
         style={{
           background:
             "linear-gradient(180deg, var(--Red, #E90609) 0%, var(--Warm-grey, #6A615C) 40.21%)",
         }}
       >
-        <Header className="text-white" />
-        <div className="container h-screen">
-          <div className="font-brockmann text-2xl">Next design summitxs</div>
+        <Header className="py-10 text-white" />
+        <div>
+          <div className="container h-screen">
+            <div className="font-brockmann text-2xl text-center">
+              Next design summitxs
+            </div>
+          </div>
+          <div className="container h-screen">
+            <div className="font-brockmann text-2xl text-center">
+              Next design summitxs
+            </div>
+          </div>
         </div>
       </div>
     </>
