@@ -6,6 +6,8 @@
 }
 
 @theme inline {
+  --color-nds-red: var(--Red, #e90609);
+  --color-nds-black: var(--Black, #302929);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
@@ -13,7 +15,49 @@
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter);
+}
+
+@layer components {
+  .container {
+    max-width: var(--container-width, 1512px); /* fallback na 1512px */
+    margin-left: auto;
+    margin-right: auto;
+    @apply px-4 sm:px-6 lg:px-13;
+  }
+
+  .bg-red-cover {
+    background: url("/red-bg.png") 50% / cover no-repeat;
+  }
+
+  .text-h1 {
+    font-family: Brockmann;
+    font-size: 83px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 87px; /* 104.819% */
+    letter-spacing: -0.996px;
+  }
+
+  .text-h2 {
+    color: var(--Black_BG, #302929);
+    font-family: Brockmann;
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 113.208% */
+    letter-spacing: -0.397px;
+  }
+
+  .text-small {
+    color: var(--Black_BG, #302929);
+
+    /* Small */
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px; /* 130.769% */
+  }
 }
