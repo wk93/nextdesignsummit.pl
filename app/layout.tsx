@@ -46,7 +46,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={`${inter.variable} ${brockmann.variable} antialiased`}>
+      <body
+        className={`${inter.variable} ${brockmann.variable} antialiased bg-nds-red`}
+      >
         {children}
       </body>
     </html>
