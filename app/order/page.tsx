@@ -9,7 +9,6 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { price } from "@/utils";
 import Link from "next/link";
-import makeOrder from "@wk93/socommerce-sdk/lib/client/makeOrder";
 import { OrderData } from "@wk93/socommerce-sdk/lib/hooks/useOrder";
 //import { z } from "zod";
 
@@ -161,8 +160,7 @@ export default function Order() {
         const x = await create(data);
         console.log(x);
       } catch (error) {
-        console.log((error as any).request);
-        console.log((error as any).response.data);
+        console.log(error);
       }
     },
     /*
