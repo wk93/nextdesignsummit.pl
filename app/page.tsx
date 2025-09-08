@@ -470,9 +470,79 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="font-medium flex items-center justify-center gap-4 py-4 text-sm bg-nds-red">
-          <Link href="/polityka-prywatnosci">Polityka prywatności</Link>
-          <Link href="/regulamin">Regulamin</Link>
+        <div className="bg-[#6A615C] pt-[200px] text-nds-baby-blue">
+          <div className="container">
+            <div className="text-xl pb-10 font-semibold">
+              Dlaczego powstał Next Design Summit?
+            </div>
+            <div className="grid md:grid-cols-3 gap-8 text-lg/7">
+              {[
+                "„Przez lata projektowałam wnętrza dla najbardziej wymagających klientów. Nauczyłam się, że prawdziwe piękno to nie tylko materiały i proporcje, ale też proces, relacje i zaufanie. W głębi serca czułam jednak, że moja misja sięga dalej niż pojedyncze projekty. Marzyłam o przestrzeni, w której cała branża projektowania wnętrz i architektury w Polsce będzie mogła spotkać się, wymieniać doświadczeniami i razem inspirować się do sięgania po więcej.",
+
+                "To marzenie dojrzewało we mnie latami. Chciałam stworzyć wydarzenie, które swoją rangą dorówna najlepszym konferencjom w Mediolanie, Londynie czy Nowym Jorku. Wiedziałam jednak, że aby zrealizować coś tak ambitnego, potrzebuję partnerów, którzy myślą podobnie i wierzą w przyszłość. Dlatego połączyłam siły ze spółką Deccore – dynamicznym zespołem ludzi, dla których technologia i profesjonalizacja branży są tak samo ważne jak dla mnie. Stając się częścią Deccore, mogę nie tylko tworzyć wnętrza, ale też kreować nowe możliwości dla całego środowiska projektowego.",
+
+                "Tak narodził się NEXT DESIGN SUMMIT – wydarzenie światowej klasy, które od teraz będzie odbywać się co roku. To coś więcej niż konferencja. To wspólnota ludzi z pasją, wiedzą i odwagą, którzy chcą zmieniać oblicze projektowania wnętrz i architektury. Wierzę, że NEXT DESIGN SUMMIT wyznacza nowe standardy w naszej branży w Polsce i że to dopiero początek.”",
+              ].map((item) => (
+                <div key={item}>{item}</div>
+              ))}
+            </div>
+          </div>
+          <div className="text-right py-16 container">
+            <div className="text-h2 text-nds-baby-blue">
+              „Wierzę, że przyszłość designu rodzi się tam, gdzie spotykają
+              się ludzie, wiedza i odwaga.”
+            </div>
+            <div className="text-right text-lg/7 pt-8">
+              Katarzyna Kraszewska
+            </div>
+          </div>
+          <div className="container">
+            <div className="text-xl pb-10 font-semibold">Kto za tym stoi?</div>
+          </div>
+
+          <div className="container grid gap-8 md:grid-cols-3 py-16 pb-32">
+            {[
+              {
+                img: "ic-01.png",
+                title: "Katarzyna Kraszewska",
+                description:
+                  "Architektka wnętrz, przedsiębiorczyni i mentorka z ponad 20-letnim doświadczeniem. Prowadzi autorską pracownię Katarzyna Kraszewska Architektura Wnętrz, realizując prestiżowe projekty w Polsce i za granicą. Tworzy wnętrza premium, łączące ponadczasową elegancję z funkcjonalnością. Jest jedną z najbardziej rozpoznawalnych postaci polskiego designu, regularnie obecna w mediach branżowych i lifestylowych.",
+              },
+              {
+                img: "ic-02.svg",
+                title: "Dobry Projektant",
+                description:
+                  "Stworzona przez Katarzynę Kraszewską platforma edukacyjna dla architektów i projektantów wnętrz. Oferuje szkolenia, e-booki, webinary, newslettery i materiały wspierające rozwój zawodowy projektantów. Wokół marki powstała jedna z największych społeczności projektantów wnętrz w Polsce, licząca już kilka tysięcy osób.",
+              },
+              {
+                img: "ic-03.svg",
+                title: "Deccore",
+                description:
+                  "Innowacyjna spółka technologiczna, do której dołączyła Katarzyna Kraszewska. Deccore rozwija narzędzia cyfrowe dla architektów i projektantów wnętrz – usprawnia komunikację z klientami, zarządzanie projektami, kosztorysy i procesy realizacji. Jej misją jest profesjonalizacja branży i wdrażanie nowoczesnych technologii, które ułatwiają pracę projektantom i podnoszą jakość obsługi klientów.",
+              },
+            ].map((item, index) => (
+              <div key={item.title}>
+                <div className="h-36 flex items-center">
+                  <img src={`/theme/${item.img}`} />
+                </div>
+                <div className="text-lg/8 pb-6 font-semibold">{item.title}</div>
+                <div>{item.description}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="bg-nds-red">
+          <div className="flex w-full items-center py-20 justify-center">
+            <img
+              src="/theme/logo.svg"
+              alt="Next Design Summit logo"
+              className="h-12"
+            />
+          </div>
+          <div className="font-medium flex items-center justify-center gap-4 py-4 text-sm bg-nds-red">
+            <Link href="/polityka-prywatnosci">Polityka prywatności</Link>
+            <Link href="/regulamin">Regulamin</Link>
+          </div>
         </div>
       </div>
     </>
