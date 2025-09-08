@@ -31,6 +31,30 @@ export default function Home() {
             </h2>
           </div>
         </div>
+        <div className="container font-semibold">
+          <div className="mb-10 text-xl/7">
+            Dlaczego powstał Next Design Summit?
+          </div>
+          <div className="grid md:grid-cols-2 gap-10">
+            <div>
+              Przez lata uczestniczyliśmy w wydarzeniach, które nie dorastały do
+              poziomu branży projektowej – były zbyt ogólne, mało praktyczne i
+              pozbawione jakości, jaką oferują konferencje biznesowe czy
+              fashion. Dlatego połączyliśmy siły – Katarzyna Kraszewska i spółka
+              Deccore – aby stworzyć coś, czego jeszcze nie było: największe,
+              prestiżowe i w pełni profesjonalne spotkanie architektów i
+              projektantów wnętrz w Polsce.
+            </div>
+            <div>
+              “Od lat marzyłam o wydarzeniu, które dorówna światowym
+              konferencjom i stworzy nową jakość w Polsce. Wspólnie z Deccore
+              powołaliśmy do życia NEXT DESIGN SUMMIT – spotkanie, które łączy
+              pasję, wiedzę i relacje. To początek nowej ery i nowych standardów
+              w branży projektowania wnętrz i architektury w Polsce.”
+            </div>
+          </div>
+          <div className="mb-10 text-xl/7 text-right">Katarzyna Kraszewska</div>
+        </div>
       </div>
       <div
         className="fixed left-0 right-0 bottom-10 bg-nds-red"
