@@ -31,7 +31,7 @@ export default function Home() {
         <Header className="py-10 text-nds-black" />
 
         <div className="container">
-          <div className="flex w-full items-center justify-center">
+          <div className="flex w-full items-center justify-center pt-32 md:pt-0">
             <img
               src="/theme/logo.svg"
               className="w-full"
@@ -49,7 +49,7 @@ export default function Home() {
 
         <div className="container">
           <div className="pb-[50px]">
-            <h1 className="text-h1 text-nds-black">
+            <h1 className="text-h1 text-nds-black mb-8">
               Nowa era projektowania zaczyna się tutaj
             </h1>
             <h2 className="text-h2 text-nds-black">
@@ -367,7 +367,9 @@ export default function Home() {
                         className="mx-auto"
                       />
                     </div>
-                    <div>{item}</div>
+                    <div className="text-center pt-4 md:pt-0 md:text-left">
+                      {item}
+                    </div>
                   </div>
                 ))}
               </div>
