@@ -3,7 +3,7 @@ import Header from "@/components/header/Header";
 export default function Home() {
   return (
     <>
-      <div className="relative">
+      <div className="relative bg-nds-red">
         <div className="bg-red-cover absolute left-0 right-0 top-0 h-screen -z-[1]" />
         <Header className="py-10 text-nds-black" />
         <div className="container">

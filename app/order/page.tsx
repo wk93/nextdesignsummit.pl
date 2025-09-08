@@ -576,7 +576,7 @@ export default function Order() {
                                   internetowej oraz innych celów opisanych w
                                   naszej{" "}
                                   <Link
-                                    href="/polityka_prywatnosci"
+                                    href="/polityka-prywatnosci"
                                     className="underline"
                                   >
                                     polityce prywatności.
@@ -589,10 +589,7 @@ export default function Order() {
                               name: (
                                 <>
                                   Przeczytałem/am i akceptuję{" "}
-                                  <Link
-                                    href="/regulamin_sklepu"
-                                    className="underline"
-                                  >
+                                  <Link href="/regulamin" className="underline">
                                     regulamin.
                                   </Link>
                                 </>
