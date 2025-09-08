@@ -11,7 +11,8 @@ export default function Success() {
 
   useEffect(() => {
     if (!isLoading && !order) {
-      router.push("/order").then(() => window.scrollTo(0, 0));
+      router.push("/order");
+      window.scrollTo(0, 0);
     }
   }, [isLoading]);
 
