@@ -164,6 +164,8 @@ export default function Order() {
           } else {
             alert("Błąd");
           }
+        } else {
+          router.push("/success");
         }
       } catch (error) {
         console.log(error);
