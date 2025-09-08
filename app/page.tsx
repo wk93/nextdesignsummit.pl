@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <div className="relative bg-nds-red">
         <div
-          className="fixed left-0 right-0 bottom-10 z-20 hidden"
+          className="fixed left-0 right-0 bottom-10 z-20"
           style={{
             background:
               "linear-gradient(180deg, rgba(239, 0, 28, 0.00) 0%, #F71100 15%, #FB081C 84.62%, rgba(255, 0, 55, 0.00) 100%);",
