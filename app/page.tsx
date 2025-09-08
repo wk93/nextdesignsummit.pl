@@ -99,6 +99,7 @@ export default function Home() {
                   viewBox="0 0 101 45"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  className="max-w-10 md:max-w-none"
                 >
                   <path
                     d="M77.8457 1L78.1387 1.29199L98.7061 21.792L99.417 22.5L98.7061 23.208L78.1387 43.708L77.8457 44H67.4307L69.1445 42.292L85.2578 26.2305L1 26.2305L1 18.7803L85.2686 18.7803L69.1445 2.70801L67.4307 1L77.8457 1Z"
@@ -323,7 +324,7 @@ export default function Home() {
               Spotkajmy się 7 listopada 2025,
               <br />w Muzeum Historii Polski.
             </div>
-            <div className="grid grid-cols-2 gap-16">
+            <div className="grid md:grid-cols-2 gap-16">
               <div>
                 <img src="/p1.png" className="w-full" />
                 <div className="text-xs pt-10">
@@ -337,6 +338,71 @@ export default function Home() {
                   Centrum konferencyjne Muzeum Historii Polski
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="pb-24">
+            <div className="container text-nds-baby-blue pb-16">
+              <div className="py-16 text-h4">Obszary tematyczne</div>
+              <div className="grid md:grid-cols-3 gap-8">
+                {[
+                  "Komunikacja",
+                  "Prawo & Finanse",
+                  "AI & Technologia",
+                  "Przyszłość branży",
+                  "Człowiek  w centrum",
+                ].map((item, index) => (
+                  <div key={item} className="text-h2 text-nds-baby-blue">
+                    <div>
+                      <img
+                        src={`/theme/th-0${index + 1}.svg`}
+                        className="mx-auto"
+                      />
+                    </div>
+                    <div>{item}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-nds-red">
+          <div className="container text-nds-black py-16 pt-32">
+            <div className="text-h2 text-center pb-10">Co zyskasz?</div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                "Konkretna wiedza → od razu do wdrożenia.",
+                "Nauczysz się lepiej komunikować.",
+                "Unikniesz kosztownych błędów.",
+                "Wyniesiesz projekty na wyższy poziom.",
+                "Poznasz narzędzia zwiększające efektywność i zarobki.",
+                "Będziesz częścią wydarzenia, które zapisze się w historii polskiego designu.",
+              ].map((item, index) => (
+                <div key={index} className="flex gap-5 justify-start pb-5">
+                  <div className="w-9">
+                    <img
+                      src={`/theme/pr-0${index + 1}.svg`}
+                      className="w-9"
+                      alt=""
+                    />
+                  </div>
+                  <div className="text-lg/7 font-semibold">{item}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="container">
+            <div>
+              <img src="/theme/arrow.svg" className="md:w-44 mx-auto" />
+            </div>
+            <div
+              className="max-w-xl h-96 mx-auto"
+              style={{
+                background:
+                  "linear-gradient(180deg, #E90609 0%, #EF3F15 28.85%)",
+                boxShadow: "0 4px 20px 0 #CB1619;",
+              }}
+            >
+              <div></div>
             </div>
           </div>
         </div>
