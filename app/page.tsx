@@ -1,4 +1,7 @@
+import Date from "@/components/header/Date";
 import Header from "@/components/header/Header";
+import Sygnet from "@/components/header/Sygnet";
+import { CheckIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 export default function Home() {
@@ -403,15 +406,67 @@ export default function Home() {
                 className="w-16 md:w-32 lg:w-44 mx-auto"
               />
             </div>
-            <div
-              className="max-w-xl h-96 mx-auto"
-              style={{
-                background:
-                  "linear-gradient(180deg, #E90609 0%, #EF3F15 28.85%)",
-                boxShadow: "0 4px 20px 0 #CB1619;",
-              }}
-            >
-              <div></div>
+            <div className="py-10">
+              <div
+                className="max-w-xl mx-auto"
+                style={{
+                  background:
+                    "linear-gradient(180deg, #E90609 0%, #EF3F15 28.85%)",
+                  boxShadow: "0 4px 20px 0 #CB1619;",
+                }}
+              >
+                <div className="flex justify-between items-center p-8">
+                  <div className="font-semibold">Cena</div>
+                  <Sygnet className="w-11" />
+                  <Date className="h-2.5" />
+                </div>
+                <div className="grid grid-cols-1 gap-5 px-8">
+                  <div className="text-h2">690 zł</div>
+                  <div>
+                    BONUS: pierwsze 100 osób otrzyma nagranie całego wydarzenia
+                    w cenie biletu!
+                  </div>
+                  <div>W cenie:</div>
+                  {[
+                    "Profesjonalna wiedza → prawo, finanse, komunikacja, technologia",
+                    "Darmowe materiały do pracy → wzory umów, arkusze, strategie, prezentacje",
+                    "Niespodzianki od prelegentów i prezenty od sponsorów",
+                    "Networking w elitarnym gronie architektów i projektantów wnętrz",
+                    "Lunch i przerwy networkingowe w prestiżowej przestrzeni Muzeum Historii Polski",
+                  ].map((item) => (
+                    <div key={item} className="flex items-center">
+                      <CheckIcon className="size-5" />
+                      <span className="ml-6">{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="p-4">
+                  <Link
+                    href="/order"
+                    className="py-2 px-4 rounded-md bg-black text-white font-semibold text-base/6 block text-center"
+                  >
+                    Kup bilet teraz
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="py-16 text-center">
+              <div className="text-h1 pb-16">Dołącz do przełomu</div>
+              <div className="text-h2 pb-16">
+                Next Design Summit to nie konferencja. To początek nowej ery w
+                designie.
+              </div>
+
+              <div className="max-w-xl mx-auto">
+                Zarezerwuj swój bilet już dziś i bądź częścią wydarzenia, które
+                zapisze się w historii branży.
+                <Link
+                  href="/order"
+                  className="py-2 px-4 rounded-md bg-black text-white font-semibold text-base/6 block text-center mt-8"
+                >
+                  Kup bilet teraz
+                </Link>
+              </div>
             </div>
           </div>
         </div>
