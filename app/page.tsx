@@ -199,6 +199,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="bg-[#6A615C]">
         <div className="container pt-40">
           <div className="text-h1 font-brockmann font-semibold tracking-tight text-nds-baby-blue text-center">
             To nie jest konferencja.
@@ -207,8 +209,10 @@ export default function Home() {
           </div>
         </div>
         <div
+          className=""
           style={{
             background: `url("/theme/bg/gray.png") center top no-repeat, #6A615C`,
+            backgroundSize: "contain",
             backgroundBlendMode: "overlay, normal",
           }}
         >
@@ -345,7 +349,7 @@ export default function Home() {
           <div className="pb-24">
             <div className="container text-nds-baby-blue pb-16">
               <div className="py-16 text-h4">Obszary tematyczne</div>
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid lg:grid-cols-3 gap-8">
                 {[
                   "Komunikacja",
                   "Prawo & Finanse",
@@ -394,7 +398,10 @@ export default function Home() {
           </div>
           <div className="container">
             <div>
-              <img src="/theme/arrow.svg" className="md:w-44 mx-auto" />
+              <img
+                src="/theme/arrow.svg"
+                className="w-16 md:w-32 lg:w-44 mx-auto"
+              />
             </div>
             <div
               className="max-w-xl h-96 mx-auto"
