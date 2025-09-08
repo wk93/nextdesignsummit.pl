@@ -79,20 +79,20 @@ body {
     .text-h1 {
       color: var(--Black_BG, #302929);
       font-family: Brockmann;
-      font-size: 70px;
+      font-size: 40px;
       font-style: normal;
       font-weight: 700;
-      line-height: 80px; /* 114.286% */
+      line-height: 44px; /* 114.286% */
       letter-spacing: -0.84px;
     }
 
     .text-h2 {
       color: var(--Black_BG, #302929);
       font-family: Brockmann;
-      font-size: 40px;
+      font-size: 32px;
       font-style: normal;
       font-weight: 600;
-      line-height: 50px; /* 125% */
+      line-height: 40px; /* 125% */
       letter-spacing: -0.3px;
     }
   }

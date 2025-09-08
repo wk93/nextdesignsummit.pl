@@ -6,20 +6,22 @@ export default function Home() {
     <>
       <div className="relative bg-nds-red">
         <div
-          className="fixed left-0 right-0 bottom-10 z-20"
+          className="fixed left-0 right-0 bottom-4 md:bottom-10 z-20"
           style={{
             background:
               "linear-gradient(180deg, rgba(239, 0, 28, 0.00) 0%, #F71100 15%, #FB081C 84.62%, rgba(255, 0, 55, 0.00) 100%);",
           }}
         >
-          <div className="container flex items-center justify-center gap-5 py-5">
+          <div className="container md:flex items-center justify-center gap-5 py-5">
             <Link
               href="/order"
-              className="py-2 px-4 rounded-md bg-black text-white font-semibold text-base/6"
+              className="py-2 px-4 rounded-md bg-black text-white font-semibold text-base/6 block text-center"
             >
               Kup bilet teraz
             </Link>
-            <span>Tylko 499 biletów – pula limitowana!</span>
+            <span className="pt-4 md:pt-0 block text-sm text-center">
+              Tylko 499 biletów – pula limitowana!
+            </span>
           </div>
         </div>
         <div className="bg-red-cover absolute left-0 right-0 top-0 h-screen -z-[1]" />
@@ -198,7 +200,7 @@ export default function Home() {
           </div>
         </div>
         <div className="container pt-40">
-          <div className="text-[90px] leading-[98px] font-brockmann font-semibold tracking-tight text-nds-baby-blue text-center">
+          <div className="text-h1 font-brockmann font-semibold tracking-tight text-nds-baby-blue text-center">
             To nie jest konferencja.
             <br />
             To przełom.
