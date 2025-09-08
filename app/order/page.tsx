@@ -883,14 +883,12 @@ export default function Order() {
                     )}
                   </form.Field>
 
-                  <form.Subscribe
-                    selector={(state) => [state.canSubmit, state.isSubmitting]}
-                  >
-                    {([canSubmit, isSubmitting]) => (
+                  <form.Subscribe selector={(state) => [state.isSubmitting]}>
+                    {([isSubmitting]) => (
                       <>
                         <button
                           type="submit"
-                          disabled={!canSubmit || isSubmitting}
+                          disabled={isSubmitting}
                           className="w-full bg-nds-red text-white mt-5 rounded-md py-2 text-base/tight disabled:opacity-60 cursor-pointer flex items-center justify-center"
                         >
                           {isSubmitting
