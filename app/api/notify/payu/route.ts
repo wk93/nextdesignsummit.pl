@@ -1,6 +1,6 @@
-import type { NextApiRequest, NextApiResponse } from "next";
 import crypto from "crypto";
 import axios from "axios";
+import { NextRequest, NextResponse } from "next/server";
 
 interface Signature {
   signature: string;
@@ -19,58 +19,60 @@ const getSignatureObject = (signature?: string): Signature | false => {
     tokens[tok[0]] = tok[1];
   });
 
-  if (
-    !tokens["signature"] ||
-    tokens["signature"] === "" ||
-    !tokens["algorithm"] ||
-    tokens["algorithm"] === ""
-  ) {
+  if (!tokens["signature"] || !tokens["algorithm"]) {
     return false;
   }
 
   return { signature: tokens.signature, algorithm: tokens.algorithm };
 };
 
-export const POST = async (req: NextApiRequest, res: NextApiResponse) => {
-  const secondKey = process.env.PAYU_MD5;
-  const signature = getSignatureObject(
-    req.headers["x-openpayu-signature"] as string,
-  );
+export async function POST(req: NextRequest) {
+  try {
+    const secondKey = process.env.PAYU_MD5;
+    const signature = getSignatureObject(
+      req.headers.get("x-openpayu-signature") ?? undefined,
+    );
 
-  if (!signature) {
-    return res.status(401).json({ message: "not ok" });
-  } else {
-    const concatnated = JSON.stringify(req.body) + secondKey;
-    const exceptedSignature = crypto
+    if (!signature) {
+      return NextResponse.json({ message: "not ok" }, { status: 401 });
+    }
+
+    const body = await req.json();
+
+    const concatnated = JSON.stringify(body) + secondKey;
+    const expectedSignature = crypto
       .createHash("md5")
       .update(concatnated)
       .digest("hex");
 
-    if (signature.signature !== exceptedSignature) {
-      return res.status(401).json({ message: "not ok" });
+    if (signature.signature !== expectedSignature) {
+      return NextResponse.json({ message: "not ok" }, { status: 401 });
     }
+
+    const token = (
+      await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/auth/admin`, {
+        username: "system",
+        password: process.env.SYSTEM_PASSWORD,
+      })
+    ).data.token;
+
+    const orderId = body.order.orderId;
+    const status = body.order.status;
+
+    if (status === "COMPLETED") {
+      await axios.put(
+        `${process.env.NEXT_PUBLIC_API_URL}/orders/status/payu`,
+        {
+          id: orderId,
+          value: "paid",
+        },
+        { headers: { Authorization: `Bearer ${token}` } },
+      );
+    }
+
+    return NextResponse.json({ message: "ok" });
+  } catch (err) {
+    console.error(err);
+    return NextResponse.json({ message: "error" }, { status: 500 });
   }
-
-  const token = (
-    await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/auth/admin`, {
-      username: "system",
-      password: process.env.SYSTEM_PASSWORD,
-    })
-  ).data.token;
-
-  const orderId = req.body.order.orderId;
-  const status = req.body.order.status;
-
-  if (status === "COMPLETED") {
-    await axios.put(
-      `${process.env.NEXT_PUBLIC_API_URL}/orders/status/payu`,
-      {
-        id: orderId,
-        value: status === "COMPLETED" ? "paid" : "canceled",
-      },
-      { headers: { Authorization: `Bearer ${token}` } },
-    );
-  }
-
-  return res.status(200).json({ message: "ok" });
-};
+}
