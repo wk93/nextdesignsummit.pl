@@ -102,50 +102,66 @@ export const terms = `<p><span style="font-weight: 400;">Niniejszy Regulamin okr
 <li><span style="font-weight: 400;"> Sprzedawca, zgodnie z wolą Klienta, dołącza do przesyłki będącej przedmiotem Dostawy paragon albo fakturę VAT obejmującą dostarczane Towary.</span></li>
 </ol>
 <p>&nbsp;</p>
-<p><strong>7 Rękojmia</strong></p>
+<p><strong>7 Reklamacje</strong></p>
 <ol>
-<li><span style="font-weight: 400;"> Sprzedawca zapewnia Dostawę Towaru pozbawionego wad fizycznych i prawnych. Sprzedawca jest odpowiedzialny względem Klienta, jeżeli Towar ma wadę fizyczną lub prawną (rękojmia).</span></li>
-<li><span style="font-weight: 400;"> Jeżeli Towar ma wadę Klient może:</span></li>
-<li><span style="font-weight: 400;">a) złożyć oświadczenie o obniżeniu ceny albo odstąpieniu od Umowy sprzedaży, chyba że Sprzedawca niezwłocznie i bez nadmiernych niedogodności dla Klienta wymieni Towar wadliwy na wolny od wad albo wadę usunie. Ograniczenie to nie ma zastosowania, jeżeli Towar był już wymieniony lub naprawiany przez sprzedawcę albo sprzedawca nie uczynił zadość obowiązkowi wymiany Towaru na wolny od wad lub usunięcia wad. Klient może zamiast zaproponowanego przez Sprzedawcę usunięcia wady żądać wymiany Towaru na wolny od wad albo zamiast wymiany Towaru żądać usunięcia wady, chyba że doprowadzenie rzeczy do zgodności z umową w spos&oacute;b wybrany przez Klienta jest niemożliwe albo wymagałoby nadmiernych koszt&oacute;w w por&oacute;wnaniu ze sposobem proponowanym przez Sprzedawcę. Przy ocenie nadmierności koszt&oacute;w uwzględnia się wartość Towaru wolnego od wad, rodzaj i znaczenie stwierdzonej wady, a także bierze się pod uwagę niedogodności, na jakie narażałby Klienta inny spos&oacute;b zaspokojenia.</span></li>
-<li><span style="font-weight: 400;">b) żądać wymiany Towaru wadliwego na wolny od wad albo usunięcia wady. Sprzedawca jest obowiązany wymienić Towar wadliwy na wolny od wad lub usunąć wadę w rozsądnym czasie bez nadmiernych niedogodności dla Klienta.</span></li>
+  <li><span style="font-weight:400;">
+    Reklamacje dotyczące zakupu biletów elektronicznych, dostępu do nich lub poprawności danych na bilecie
+    Klient może składać w formie elektronicznej na adres: biuro@nextdesignsummit.pl lub pisemnie na adres Sprzedawcy.
+  </span></li>
+  <li><span style="font-weight:400;">
+    Reklamacja powinna zawierać co najmniej: imię i nazwisko (lub nazwę), adres e-mail użyty przy zakupie,
+    numer zamówienia, opis zastrzeżeń oraz żądanie Klienta.
+  </span></li>
+  <li><span style="font-weight:400;">
+    Sprzedawca rozpatruje reklamację niezwłocznie, nie później niż w terminie 14 dni od jej otrzymania,
+    i udziela odpowiedzi na trwałym nośniku (na adres e-mail Klienta).
+  </span></li>
+  <li><span style="font-weight:400;">
+    W przypadku niedostarczenia biletu na adres e-mail, Klient powinien w pierwszej kolejności sprawdzić folder SPAM/Oferty,
+    a następnie skontaktować się ze Sprzedawcą w celu ponownej wysyłki.
+  </span></li>
+  <li><span style="font-weight:400;">
+    W razie odwołania wydarzenia Sprzedawca dokonuje zwrotu ceny biletu w pełnej wysokości w terminie do 14 dni
+    od dnia poinformowania Klienta o odwołaniu. W przypadku zmiany terminu lub miejsca wydarzenia Klient może
+    zaakceptować nowy termin/miejsce albo odstąpić od udziału i otrzymać zwrot ceny biletu.
+  </span></li>
 </ol>
-<p><span style="font-weight: 400;">&nbsp;Sprzedawca może odm&oacute;wić zadość uczynienia żądaniu Klienta, jeżeli doprowadzenie do zgodności z Umową sprzedaży Towaru wadliwego w spos&oacute;b wybrany przez Klienta jest niemożliwe lub w por&oacute;wnaniu z drugim możliwym sposobem doprowadzenia do zgodności z Umową sprzedaży wymagałoby nadmiernych koszt&oacute;w. Koszty naprawy lub wymiany ponosi Sprzedawca.</span></p>
-<ol start="3">
-<li><span style="font-weight: 400;"> Klient, kt&oacute;ry wykonuje uprawnienia z tytułu rękojmi, jest obowiązany dostarczyć rzecz wadliwą na adres Sprzedawcy. W wypadku Klienta będącego Konsumentem koszt dostarczenia pokrywa Sprzedawca.</span></li>
-<li><span style="font-weight: 400;"> Sprzedawca odpowiada z tytułu rękojmi, jeżeli wada fizyczna zostanie stwierdzona przed upływem dw&oacute;ch lat od wydania Towaru Klientowi. Roszczenie o usunięcie wady lub wymianę Towaru na wolny od wad przedawnia się z upływem roku, lecz termin ten nie może zakończyć się przed upływem terminu określonego w zdaniu pierwszym. W tym terminie Klient może odstąpić od Umowy sprzedaży lub złożyć oświadczenie o obniżeniu ceny z powodu wady Towaru. Jeżeli Klient żądał wymiany Towaru na wolny od wad lub usunięcia wady, termin do odstąpienia od Umowy sprzedaży lub złożenia oświadczenia o obniżeniu ceny rozpoczyna się z chwilą bezskutecznego upływu terminu do wymiany Towaru lub usunięcia wady.</span></li>
-<li><span style="font-weight: 400;"> Wszelkie reklamacje związane z Towarem lub realizacją Umowy sprzedaży, Klient może kierować w formie pisemnej na adres Sprzedawcy.</span></li>
-<li><span style="font-weight: 400;"> Sprzedawca w ciągu 14 dni od dnia żądania zawierającego reklamację, ustosunkuje się do reklamacji Towaru lub reklamacji związanej z realizacją Umowy sprzedaży zgłoszonej przez Klienta.</span></li>
-<li><span style="font-weight: 400;"> Klient może zgłosić Sprzedawcy reklamację w związku z korzystaniem z usług nieodpłatnych świadczonych drogą elektroniczną przez Sprzedawcę. Reklamacja może być złożona w formie elektronicznej i przesłana na adres biuro@nextdesignsummit.pl. W zgłoszeniu reklamacyjnym Klient winien zawrzeć opis zaistniałego problemu. Sprzedawca niezwłocznie, lecz nie p&oacute;źniej niż w terminie 14 dni rozpatruje reklamacje i udziela Klientowi odpowiedzi.</span></li>
-</ol>
-<p>&nbsp;</p>
-<p><strong>8 Odstąpienie od Umowy sprzedaży</strong></p>
+<p><strong>8 Odstąpienie od umowy i zwroty biletów</strong></p>
 <ol>
-<li><span style="font-weight: 400;"> Klient będący Konsumentem, kt&oacute;ry zawarł Umowę sprzedaży, może w terminie 14 dni odstąpić od niej bez podawania przyczyny.</span></li>
-<li><span style="font-weight: 400;"> Bieg terminu na odstąpienie od Umowy sprzedaży rozpoczyna się od chwili objęcia Towaru w posiadanie przez Klienta.</span></li>
+  <li><span style="font-weight:400;">
+    Przedmiotem sprzedaży są bilety na wydarzenie mające charakter usługi związanej z wypoczynkiem,
+    rozrywką lub wydarzeniem kulturalnym, świadczonej w oznaczonym dniu lub okresie.
+    Z tego względu ustawowe prawo odstąpienia od umowy zawartej na odległość co do zasady nie przysługuje Konsumentowi.
+  </span></li>
+
+  <li><span style="font-weight:400;">
+    Niezależnie od powyższego Sprzedawca wprowadza dobrowolną politykę zwrotów:
+    Klient może zrezygnować z biletu i otrzymać zwrot ceny w terminie <strong>14 dni od dnia zakupu</strong>,
+    jednak nie później niż <strong>7 dni przed datą rozpoczęcia wydarzenia</strong> (decyduje wcześniejsza z tych dat).
+  </span></li>
+
+  <li><span style="font-weight:400;">
+    Warunkiem skorzystania z dobrowolnego zwrotu jest to, aby bilet nie został wykorzystany,
+    nie został wymieniony na identyfikator wstępu, nie został trwale przypisany do innego uczestnika
+    (jeżeli regulamin wydarzenia tego zabrania) oraz aby nie doszło do rozpoczęcia wydarzenia.
+  </span></li>
+
+  <li><span style="font-weight:400;">
+    Zgłoszenia zwrotu należy dokonać wysyłając wiadomość na adres: biuro@nextdesignsummit.pl z podaniem numeru zamówienia,
+    danych nabywcy oraz oświadczenia o rezygnacji. Po pozytywnej weryfikacji bilet zostanie unieważniony,
+    a płatność zwrócona w terminie do 14 dni tą samą metodą, którą dokonano zapłaty, chyba że Klient wyraźnie zgodzi się na inny sposób zwrotu.
+  </span></li>
+
+  <li><span style="font-weight:400;">
+    Po upływie terminów wskazanych w ust. 2 zwrot ceny nie przysługuje, chyba że wydarzenie zostanie odwołane
+    lub nastąpi istotna zmiana jego terminu lub miejsca z przyczyn leżących po stronie organizatora – wówczas stosuje się §7 ust. 5.
+  </span></li>
+
+  <li><span style="font-weight:400;">
+    Postanowienia niniejszego paragrafu nie naruszają uprawnień Klienta wynikających z przepisów bezwzględnie obowiązujących,
+    w szczególności w zakresie odpowiedzialności Sprzedawcy za niewykonanie lub nienależyte wykonanie umowy.
+  </span></li>
 </ol>
-<p><span style="font-weight: 400;">&nbsp;Klient może odstąpić od Umowy sprzedaży składając Sprzedawcy oświadczenie o odstąpieniu. Oświadczenie można złożyć na formularzu, kt&oacute;rego wz&oacute;r został zamieszczony przez Sprzedawcę na Stronie Internetowej Sklepu pod adresem: Formularz odstąpienia. Do zachowania terminu wystarczy wysłanie oświadczenia przed jego upływem.</span></p>
-<p><span style="font-weight: 400;">Klient może odstąpić od Umowy sprzedaży, składając Sprzedawcy oświadczenie o odstąpieniu za pośrednictwem formularza udostępnionego na stronie internetowej pod adresem: Elektroniczny Formularz odstąpienia. Do zachowania terminu wystarczy wysłanie oświadczenia przed jego upływem. Sprzedawca niezwłocznie potwierdza Klientowi otrzymanie formularza złożonego za pośrednictwem strony internetowej.</span></p>
-<ol start="3">
-<li><span style="font-weight: 400;"> W przypadku odstąpienia od Umowy sprzedaży, jest ona uważana za niezawartą.</span></li>
-<li><span style="font-weight: 400;"> Jeśli Klient złożył oświadczenie o odstąpieniu od Umowy sprzedaży zanim Sprzedawca przyjął jego ofertę, oferta przestaje wiązać.</span></li>
-<li><span style="font-weight: 400;"> Sprzedawca ma obowiązek niezwłocznie, nie p&oacute;źniej niż w terminie 14 dni od dnia otrzymania oświadczenia Klienta o odstąpieniu od Umowy sprzedaży, zwr&oacute;cić mu wszystkie dokonane przez niego płatności, w tym koszt Dostawy Towaru do Klienta. Sprzedawca może wstrzymać się ze zwrotem płatności otrzymanych od Klienta do chwili otrzymania z powrotem Towaru lub dostarczenia przez Klienta dowodu odesłania Towaru, w zależności od tego, kt&oacute;re zdarzenie nastąpi wcześniej.</span></li>
-<li><span style="font-weight: 400;"> Jeżeli Klient korzystający z prawa do odstąpienia wybrał spos&oacute;b dostarczenia Towaru inny niż najtańszy zwykły spos&oacute;b Dostawy oferowany przez Sprzedawcę, Sprzedawca nie jest zobowiązany do zwrotu Klientowi poniesionych przez niego dodatkowych koszt&oacute;w.</span></li>
-<li><span style="font-weight: 400;"> Klient ma obowiązek zwr&oacute;cić Towar Sprzedawcy niezwłocznie, jednak nie p&oacute;źniej niż w terminie 14 dni od dnia, w kt&oacute;rym odstąpił od Umowy sprzedaży. Do zachowania terminu wystarczy odesłanie Towaru na adres Sprzedawcy przed upływem tego terminu.</span></li>
-<li><span style="font-weight: 400;"> W wypadku odstąpienia Klient ponosi tylko bezpośrednie koszty zwrotu Towaru.</span></li>
-<li><span style="font-weight: 400;"> Jeśli ze względu na sw&oacute;j charakter Towar nie może zostać w zwykłym trybie odesłany pocztą, Sprzedawca informuje Klienta o kosztach zwrotu rzeczy na Stronie Internetowej Sklepu.</span></li>
-<li><span style="font-weight: 400;"> Klient ponosi odpowiedzialność za zmniejszenie wartości Towaru będące wynikiem korzystania z niego w spos&oacute;b wykraczający poza spos&oacute;b konieczny do stwierdzenia charakteru, cech i funkcjonowania Towaru.</span></li>
-<li><span style="font-weight: 400;"> Sprzedawca dokonuje zwrotu płatności przy użyciu takiego samego sposobu zapłaty, jakiego użył Klient, chyba, że Klient wyraźnie zgodził się na inny spos&oacute;b zwrotu, kt&oacute;ry nie wiąże się dla niego z żadnymi kosztami.</span></li>
-<li><span style="font-weight: 400;"> Pozasądowe sposoby rozstrzygania spor&oacute;w:</span></li>
-</ol>
-<p><span style="font-weight: 400;">Informujemy, że Klientowi będącemu konsumentem przysługuje możliwość skorzystania z następujących, pozasądowych sposob&oacute;w rozpatrywania reklamacji oraz dochodzenia roszczeń:&nbsp;</span></p>
-<ol>
-<li><span style="font-weight: 400;">a) możliwość zwr&oacute;cenia się z wnioskiem o przeprowadzenie postępowania w sprawie pozasądowego rozwiązywania spor&oacute;w konsumenckich na podstawie Ustawy z dnia 23 września 2016 r. o pozasądowym rozwiązywaniu spor&oacute;w konsumenckich (Dz. U. z 2016 r., poz. 1823),</span></li>
-<li><span style="font-weight: 400;">b) wystąpienie z wnioskiem o rozpoznanie sprawy przez Stały Polubowny Sąd Konsumencki działający przy odpowiednim Wojew&oacute;dzkim Inspektoracie Inspekcji Handlowej,</span></li>
-<li><span style="font-weight: 400;">c) zwr&oacute;cenie się do Miejskiego Rzecznika Praw Konsument&oacute;w o pomoc w zakresie ochrony interes&oacute;w i praw konsument&oacute;w (np. http://konsument.um.warszawa.pl/). Bezpłatną pomoc konsumentom w zakresie ochrony ich praw i interes&oacute;w świadczą także organizacje społeczne, takie jak m.in. Federacja Konsument&oacute;w,</span></li>
-</ol>
-<p><span style="font-weight: 400;">&nbsp;Jeżeli dokonujesz zakupu Towar&oacute;w jako konsument, jesteś także uprawniony do skorzystania z pozasądowego sposobu rozpatrywania spor&oacute;w i dochodzenia roszczeń w postaci platformy interaktywnej ODR (Online Dispute Resolution), zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) Nr 524/2013 z dnia 21 maja 2013 r. w sprawie internetowego systemu rozstrzygania spor&oacute;w konsumenckich oraz zmiany Rozporządzenia (WE) nr 2006/2004 i dyrektywy 2009/WE, zwanym dalej &bdquo;ROZPORZĄDZENIEM W SPRAWIE ODR&rdquo;.</span></p>
-<p><span style="font-weight: 400;">Stosownie do Art. 1 Rozporządzenia w sprawie ODR celem powstania platformy ODR jest udostępnienie konsumentom narzędzia ułatwiającego niezależne, bezstronne, przejrzyste, skuteczne, szybkie i sprawiedliwe pozasądowe rozstrzyganie przez internet spor&oacute;w między konsumentami i przedsiębiorcami na terytorium Unii Europejskiej.</span></p>
-<p>&nbsp;</p>
 <p><strong>9 Usługi nieodpłatne</strong></p>
 <ol>
 <li><span style="font-weight: 400;"> Sprzedawca świadczy na rzecz Klient&oacute;w, drogą elektroniczną usługi nieodpłatne:</span></li>
