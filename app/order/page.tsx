@@ -157,8 +157,14 @@ export default function Order() {
       };
       try {
         console.log(data);
-        const x = await create(data);
-        console.log(x);
+        const response = await create(data);
+        if (response.shouldRedirect) {
+          if (response.redirect) {
+            window.location.href = response.redirect;
+          } else {
+            alert("Błąd");
+          }
+        }
       } catch (error) {
         console.log(error);
       }
@@ -616,7 +622,7 @@ export default function Order() {
                               "w-full bg-nds-red text-white mt-5 rounded-md py-2 text-base/tight disabled:bg-euro-red/80 cursor-pointer flex items-center justify-center"
                             }
                           >
-                            Złóż zamówienie
+                            Zamawiam i płacę
                           </button>
                         )
                       }
