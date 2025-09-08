@@ -135,7 +135,7 @@ export default function Order() {
       }}
     >
       <div className="min-h-screen bg-white">
-        <div className="max-w-5xl p-8 mx-auto">
+        <div className="max-w-5xl md:p-8 mx-auto">
           <div className="p-8">
             <img className="max-w-40 w-full" src="/theme/logo.svg" alt="Logo" />
           </div>
