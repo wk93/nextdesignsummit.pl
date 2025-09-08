@@ -233,6 +233,111 @@ export default function Home() {
             <div className="py-16">
               <div className="text-2xl/7 font-semibold">Plan wydarzenia</div>
             </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  time: "11:00",
+                  name: "Otwarcie + stand-up branżowy",
+                  description:
+                    "Powitanie uczestników, kawa, anegdoty z branży.",
+                },
+                {
+                  time: "11:20",
+                  name: "Panel 1: Człowiek w centrum projektu",
+                  description:
+                    "Organizacja czasu, neuroarchitektura, wellbeing i wypalenie zawodowe.",
+                },
+                {
+                  time: "12:20",
+                  name: "Panel 2: Finanse & AI",
+                  description:
+                    "Planowanie budżetów + sztuczna inteligencja w projektowaniu.",
+                },
+                {
+                  time: "13:00",
+                  name: "Prezentacja aplikacji Deccore",
+                  description:
+                    "Przełomowe narzędzie do zarządzania projektami.",
+                },
+                {
+                  time: "13:30",
+                  name: "Lunch & networking",
+                  description: "",
+                },
+                {
+                  time: "14:20",
+                  name: "Panel 3: Prawo i zarządzanie projektami",
+                  description:
+                    "Prawo autorskie, zarządzanie zespołem, case studies.",
+                },
+                {
+                  time: "14:50",
+                  name: "Panel 4: Technologia i współpraca",
+                  description:
+                    "Modele współpracy z wykonawcami, księgowymi i prawnikami.",
+                },
+                {
+                  time: "15:30",
+                  name: "Goście specjalni",
+                  description: "Inspiracje i trendy.",
+                },
+                {
+                  time: "16:10",
+                  name: "Panel 5: Przyszłość branży",
+                  description:
+                    "Przewidywania, zmiany, kompetencje przyszłości.",
+                },
+                {
+                  time: "16:50",
+                  name: "Finałowy stand-up branżowy",
+                  description: "",
+                },
+                {
+                  time: "17:20–21:00",
+                  name: "Networking zamknięty",
+                  description:
+                    "Kameralne rozmowy w elitarnym gronie projektantów.",
+                },
+              ].map((item) => (
+                <div key={item.time}>
+                  <div className="flex gap-5 justify-start pb-5">
+                    <div className="w-9">{item.time}</div>
+                    <div className="flex-1">
+                      <div className="text-lg/7 font-semibold">{item.name}</div>
+                      {item.description && (
+                        <div className="text-sm/6">{item.description}</div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-xs  text-right py-16">
+              * Program wydarzenia może ulec modyfikacjom – zawsze z myślą o
+              tym, by dostarczyć uczestnikom jeszcze więcej inspiracji, wiedzy i
+              wartości.
+            </p>
+          </div>
+          <div className="container text-nds-baby-blue pb-16">
+            <div className="py-16 text-h4">
+              Spotkajmy się 7 listopada 2025,
+              <br />w Muzeum Historii Polski.
+            </div>
+            <div className="grid grid-cols-2 gap-16">
+              <div>
+                <img src="/p1.png" className="w-full" />
+                <div className="text-xs pt-10">
+                  Muzeum Historii Polski, Cytadela Warszawska, ul. Gwardii 1,
+                  01-538 Warszawa
+                </div>
+              </div>
+              <div>
+                <img src="/p2.png" className="w-full" />
+                <div className="text-xs pt-10 text-right">
+                  Centrum konferencyjne Muzeum Historii Polski
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="font-medium flex items-center justify-center gap-4 py-4 text-sm bg-nds-red">

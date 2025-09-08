@@ -30,7 +30,7 @@ body {
   }
 
   .bg-red-cover {
-    background: url("/red-bg.png") 50% / cover no-repeat;
+    background: url("/theme/bg/up.png") 51% / cover no-repeat;
   }
 
   .text-h1 {
@@ -50,6 +50,18 @@ body {
     font-weight: 600;
     line-height: 60px; /* 113.208% */
     letter-spacing: -0.397px;
+  }
+
+  .text-h4 {
+    color: var(--Baby-blue, #c6eaff);
+
+    /* H4 */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 140% */
+    letter-spacing: -0.1px;
   }
 
   .text-small {
