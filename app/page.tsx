@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div className="relative bg-nds-red">
         <div
-          className="fixed left-0 right-0 bottom-4 md:bottom-10 z-20"
+          className="fixed left-0 right-0 bottom-8 md:bottom-10 z-20"
           style={{
             background:
               "linear-gradient(180deg, rgba(239, 0, 28, 0.00) 0%, #F71100 15%, #FB081C 84.62%, rgba(255, 0, 55, 0.00) 100%);",
@@ -22,7 +22,7 @@ export default function Home() {
             >
               Kup bilet teraz
             </Link>
-            <span className="pt-4 md:pt-0 block text-sm text-center">
+            <span className="pt-1 md:pt-0 block text-sm text-center">
               Tylko 499 biletów – pula limitowana!
             </span>
           </div>
