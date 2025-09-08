@@ -430,7 +430,7 @@ export default function Order() {
                             // pokazujemy sekcję -> zapewniamy obiekt do bindowania pól
                             form.setFieldValue("addressInvoice", {
                               ...defaultAddressValues,
-                            } as any);
+                            });
 
                             form.validateAllFields("change");
                           }
@@ -840,7 +840,9 @@ export default function Order() {
                         <Checkbox
                           color="#bd1417"
                           value={value}
-                          onChange={handleChange}
+                          onChange={(value) =>
+                            handleChange(value as ("privacy" | "term")[])
+                          }
                           options={[
                             {
                               id: "privacy",
@@ -882,13 +884,9 @@ export default function Order() {
                   </form.Field>
 
                   <form.Subscribe
-                    selector={(state) => [
-                      state.canSubmit,
-                      state.isSubmitting,
-                      state.errors,
-                    ]}
+                    selector={(state) => [state.canSubmit, state.isSubmitting]}
                   >
-                    {([canSubmit, isSubmitting, errors]) => (
+                    {([canSubmit, isSubmitting]) => (
                       <>
                         <button
                           type="submit"
