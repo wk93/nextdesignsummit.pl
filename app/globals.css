@@ -9,6 +9,7 @@
 @theme inline {
   --color-nds-red: var(--Red, #e90609);
   --color-nds-black: var(--Black, #302929);
+  --color-nds-baby-blue: var(--Baby-blue, #c6eaff);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
