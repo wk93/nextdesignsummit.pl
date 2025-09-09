@@ -904,6 +904,16 @@ export default function Order() {
           </div>
         </div>
       </div>
+      <div className="flex items-center justify-center w-full py-8">
+        <a href="https://socommerce.pl" target="_blank" rel="noreferrer">
+          <img
+            src="https://socommerce.b-cdn.net/logo_black.svg"
+            alt="Socommerce"
+            width="110"
+            height="30"
+          />
+        </a>
+      </div>
     </form>
   );
 }

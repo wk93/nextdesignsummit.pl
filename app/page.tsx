@@ -12,7 +12,7 @@ export default function Home() {
           className="fixed left-0 right-0 bottom-8 md:bottom-10 z-20"
           style={{
             background:
-              "linear-gradient(180deg, rgba(239, 0, 28, 0.00) 0%, #F71100 15%, #FB081C 84.62%, rgba(255, 0, 55, 0.00) 100%);",
+              "linear-gradient(180deg, rgba(239, 0, 28, 0.00) 0%, #F71100 15%, #FB081C 84.62%, rgba(255, 0, 55, 0.00) 100%)",
           }}
         >
           <div className="container md:flex items-center justify-center gap-5 py-5">
@@ -544,6 +544,16 @@ export default function Home() {
           <div className="font-medium flex items-center justify-center gap-4 py-4 text-sm bg-nds-red">
             <Link href="/polityka-prywatnosci">Polityka prywatności</Link>
             <Link href="/regulamin">Regulamin</Link>
+          </div>
+          <div className="flex items-center justify-center w-full py-8">
+            <a href="https://socommerce.pl" target="_blank" rel="noreferrer">
+              <img
+                src="https://socommerce.b-cdn.net/logo_black.svg"
+                alt="Socommerce"
+                width="110"
+                height="30"
+              />
+            </a>
           </div>
         </div>
       </div>
