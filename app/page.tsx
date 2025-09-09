@@ -502,7 +502,7 @@ export default function Home() {
             <div className="text-xl pb-10 font-semibold">Kto za tym stoi?</div>
           </div>
 
-          <div className="container grid gap-8 md:grid-cols-3 py-16 pb-32">
+          <div className="container grid gap-8 md:grid-cols-2 py-16 pb-32">
             {[
               {
                 img: "ic-01.png",
@@ -510,12 +510,14 @@ export default function Home() {
                 description:
                   "Architektka wnętrz, przedsiębiorczyni i mentorka z ponad 20-letnim doświadczeniem. Prowadzi autorską pracownię Katarzyna Kraszewska Architektura Wnętrz, realizując prestiżowe projekty w Polsce i za granicą. Tworzy wnętrza premium, łączące ponadczasową elegancję z funkcjonalnością. Jest jedną z najbardziej rozpoznawalnych postaci polskiego designu, regularnie obecna w mediach branżowych i lifestylowych.",
               },
+              /*
               {
                 img: "ic-02.svg",
                 title: "Dobry Projektant",
                 description:
                   "Stworzona przez Katarzynę Kraszewską platforma edukacyjna dla architektów i projektantów wnętrz. Oferuje szkolenia, e-booki, webinary, newslettery i materiały wspierające rozwój zawodowy projektantów. Wokół marki powstała jedna z największych społeczności projektantów wnętrz w Polsce, licząca już kilka tysięcy osób.",
               },
+              */
               {
                 img: "ic-03.svg",
                 title: "Deccore",
