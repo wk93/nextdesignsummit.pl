@@ -11,6 +11,28 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Next design summit",
   description: "Next design summit",
+  openGraph: {
+    title: "Next design summit",
+    description: "Next design summit",
+    url: "https://www.nextdesignsummit.pl",
+    siteName: "Next design summit",
+    images: [
+      {
+        url: "/p1.png",
+        width: 552,
+        height: 419,
+        alt: "Next design summit",
+      },
+    ],
+    locale: "pl_PL",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Next design summit",
+    description: "Next design summit",
+    images: ["/p1.png"],
+  },
 };
 
 const brockmann = localFont({
