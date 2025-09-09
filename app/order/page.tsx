@@ -144,6 +144,9 @@ export default function Order() {
             {/* LEWA KOLUMNA */}
             <div className="bg-white p-8">
               <div className="grid md:grid-cols-2 gap-x-4 gap-y-2">
+                <div className="md:col-span-2 text-lg pb-2">
+                  Formularz zamówienia
+                </div>
                 {/* Email */}
                 <div className="md:col-span-2">
                   <form.Field name="email">
