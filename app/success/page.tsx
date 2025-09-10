@@ -50,7 +50,7 @@ export default function Success() {
 
                 <p className="mb-8">
                   W tytule przelewu prosimy wpisać numer zamówienia:{" "}
-                  {order.number}
+                  {order.token}
                 </p>
 
                 <p className="mb-8">
