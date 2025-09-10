@@ -29,7 +29,7 @@ export default function Success() {
           </div>
           <div className="text-2xl">Dziękujemy za złożenie zamówienia!</div>
           <div>
-            Twój numer zamówienia to <strong>{order.number}</strong>
+            Twój numer zamówienia to <strong>{order.token}</strong>
             {order.payment.code === "banktransfer" ? (
               <>
                 <p className="mb-8">
