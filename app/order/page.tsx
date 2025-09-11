@@ -15,6 +15,7 @@ import {
   orderFormSchema,
 } from "@/components/order/order.schema";
 import { OrderData } from "@wk93/socommerce-sdk/lib/hooks/useOrder";
+import InputNumber from "@/components/form/InputNumber";
 export default function Order() {
   const { cart, isLoading, update } = useCart();
   const router = useRouter();
@@ -80,7 +81,9 @@ export default function Order() {
             });
           }
         })();
-      } else if (
+      }
+      /*
+      else if (
         cart &&
         cart.items.length === 1 &&
         cart.items[0].quantity > 1
@@ -105,8 +108,10 @@ export default function Order() {
               },
             });
           }
-        })();
+        }
+        )();
       }
+      */
     }
   }, [isLoading]);
 
@@ -136,13 +141,13 @@ export default function Order() {
     >
       <div className="min-h-screen bg-white">
         <div className="max-w-5xl md:p-8 mx-auto">
-          <div className="p-8">
+          <div className="px-4 py-8 md:p-8">
             <img className="max-w-40 w-full" src="/theme/logo.svg" alt="Logo" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* LEWA KOLUMNA */}
-            <div className="bg-white p-8">
+            <div className="bg-white p-4 md:p-8">
               <div className="grid md:grid-cols-2 gap-x-4 gap-y-2">
                 <div className="md:col-span-2 text-lg pb-2">
                   Formularz zamówienia
@@ -781,6 +786,31 @@ export default function Order() {
                                 ? ` (${stockUnit.variants[0].group.name} ${stockUnit.variants[0].name})`
                                 : null}
                             </h3>
+                            <div className="max-w-30 relative">
+                              {isLoading && (
+                                <div className="absolute inset-0 flex items-center justify-center bg-white/90">
+                                  <LoadingIcon className="size-5 text-nds-red" />
+                                </div>
+                              )}
+
+                              <InputNumber
+                                value={quantity}
+                                onChange={async (newQuantity) => {
+                                  await update({
+                                    item: {
+                                      quantity: newQuantity - quantity,
+                                      product: {
+                                        stockUnit: product.stockUnits[0],
+                                        product: {
+                                          ...product,
+                                          link: product.link,
+                                        },
+                                      },
+                                    },
+                                  });
+                                }}
+                              />
+                            </div>
                           </div>
                           <p className="flex-none text-base font-medium text-gray-900">
                             {price(
@@ -891,7 +921,7 @@ export default function Order() {
                       <>
                         <button
                           type="submit"
-                          disabled={isSubmitting}
+                          disabled={isSubmitting || isLoading}
                           className="w-full bg-nds-red text-white mt-5 rounded-md py-2 text-base/tight disabled:opacity-60 cursor-pointer flex items-center justify-center"
                         >
                           {isSubmitting

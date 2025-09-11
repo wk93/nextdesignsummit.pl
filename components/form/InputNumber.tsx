@@ -27,6 +27,7 @@ const InputNumber: React.FC<Props> = ({ value, onChange }) => {
   return (
     <div className="rounded-md overflow-hidden border border-gray-200 inline-flex shadow-xs items-center">
       <button
+        type="button"
         onClick={() => realChange(value - 1)}
         className="relative inline-flex items-center px-2 py-2.5 text-xs text-gray-900 hover:bg-gray-50 focus:outline-offset-0 cursor-pointer border-r border-gray-200"
       >
@@ -41,6 +42,7 @@ const InputNumber: React.FC<Props> = ({ value, onChange }) => {
       />
 
       <button
+        type="button"
         onClick={() => realChange(value + 1)}
         className="relative inline-flex items-center px-2 py-2.5 text-xs text-gray-900 hover:bg-gray-50 focus:outline-offset-0 cursor-pointer border-l border-gray-200"
       >
