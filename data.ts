@@ -22,7 +22,7 @@ export const privatePolicy = `<p><span style="font-weight: 400;">Polityka prywat
 <p><span style="font-weight: 400;">&bdquo;zgoda osoby, kt&oacute;rej dane dotyczą&rdquo; oznacza dobrowolne, konkretne, świadome i jednoznaczne okazanie woli, kt&oacute;rym osoba, kt&oacute;rej dane dotyczą, w formie oświadczenia lub wyraźnego działania potwierdzającego, przyzwala na przetwarzanie dotyczących jej danych osobowych.</span></p>
 <p><span style="font-weight: 400;">Administrator Danych Osobowych. Cele, zakres i podstawy przetwarzania</span></p>
 <p><span style="font-weight: 400;">Administratorem Danych Osobowych Użytkownik&oacute;w sklepu internetowego www.nextdesignsummit.pl jest sp&oacute;łka sp&oacute;łka Deccore sp. z o.o., Grzybowska 4 / 96, 00-131 Warszawa; KRS 0001083010, REGON 527536161, NIP 5252989674.</span></p>
-<p><span style="font-weight: 400;">Kontakt ze Sklepem w każdej sprawie związanej z ochroną danych osobowych Użytkownika możliwy jest za pośrednictwem poczty elektronicznej pod adresem: biuro@nextdesignsummit.pl,</span></p>
+<p><span style="font-weight: 400;">Kontakt ze Sklepem w każdej sprawie związanej z ochroną danych osobowych Użytkownika możliwy jest za pośrednictwem poczty elektronicznej pod adresem: kontakt@nextdesignsummit.pl,</span></p>
 <p><span style="font-weight: 400;">Dane osobowe Użytkownika przetwarzane są wyłącznie w celach:</span></p>
 <p><span style="font-weight: 400;">zarejestrowania i utrzymywania konta Użytkownika, kt&oacute;re służy Użytkownikom do dokonywania zakup&oacute;w w sklepie internetowym nextdesignsummit.pl;</span></p>
 <p><span style="font-weight: 400;">kontaktu pomiędzy Użytkownikiem a Administratorem Danych Osobowych, we wszystkich sprawach związanych ze złożonym zam&oacute;wieniem; realizacji zwartych z Administratorem Danych Osobowych um&oacute;w sprzedaży;</span></p>
@@ -51,7 +51,7 @@ export const terms = `<p><span style="font-weight: 400;">Niniejszy Regulamin okr
 <li><span style="font-weight: 400;"> Rejestracja - oznacza czynność faktyczną dokonaną w spos&oacute;b określony w Regulaminie, wymaganą dla korzystania przez Klienta ze wszystkich funkcjonalności Sklepu Internetowego.</span></li>
 <li><span style="font-weight: 400;"> Sprzedawca - oznacza:</span></li>
 </ol>
-<p><span style="font-weight: 400;">Deccore sp. z o.o., Grzybowska 4 / 96, 00-131 Warszawa; KRS 0001083010, REGON 527536161, NIP 5252989674, email: biuro@nextdesignsummit.pl, będącej jednocześnie właścicielem Sklepu Internetowego. Nr konta bankowego: Jest Bank nr: 06 1160 2202 0000 0006 0161 6133</span></p>
+<p><span style="font-weight: 400;">Deccore sp. z o.o., Grzybowska 4 / 96, 00-131 Warszawa; KRS 0001083010, REGON 527536161, NIP 5252989674, email: kontakt@nextdesignsummit.pl, będącej jednocześnie właścicielem Sklepu Internetowego. Nr konta bankowego: Jest Bank nr: 06 1160 2202 0000 0006 0161 6133</span></p>
 <ol start="8">
 <li><span style="font-weight: 400;"> Strona Internetowa Sklepu - oznacza strony internetowe, pod kt&oacute;rymi Sprzedawca prowadzi Sklep Internetowy, działające w domenie www.nextdesignsummit.pl</span></li>
 <li><span style="font-weight: 400;"> Towar - oznacza produkt przedstawiony przez Sprzedawcę za pośrednictwem Strony Internetowej Sklepu, mogący być przedmiotem Umowy sprzedaży.</span></li>
@@ -106,7 +106,7 @@ export const terms = `<p><span style="font-weight: 400;">Niniejszy Regulamin okr
 <ol>
   <li><span style="font-weight:400;">
     Reklamacje dotyczące zakupu biletów elektronicznych, dostępu do nich lub poprawności danych na bilecie
-    Klient może składać w formie elektronicznej na adres: biuro@nextdesignsummit.pl lub pisemnie na adres Sprzedawcy.
+    Klient może składać w formie elektronicznej na adres: kontakt@nextdesignsummit.pl lub pisemnie na adres Sprzedawcy.
   </span></li>
   <li><span style="font-weight:400;">
     Reklamacja powinna zawierać co najmniej: imię i nazwisko (lub nazwę), adres e-mail użyty przy zakupie,
@@ -147,7 +147,7 @@ export const terms = `<p><span style="font-weight: 400;">Niniejszy Regulamin okr
   </span></li>
 
   <li><span style="font-weight:400;">
-    Zgłoszenia zwrotu należy dokonać wysyłając wiadomość na adres: biuro@nextdesignsummit.pl z podaniem numeru zamówienia,
+    Zgłoszenia zwrotu należy dokonać wysyłając wiadomość na adres: kontakt@nextdesignsummit.pl z podaniem numeru zamówienia,
     danych nabywcy oraz oświadczenia o rezygnacji. Po pozytywnej weryfikacji bilet zostanie unieważniony,
     a płatność zwrócona w terminie do 14 dni tą samą metodą, którą dokonano zapłaty, chyba że Klient wyraźnie zgodzi się na inny sposób zwrotu.
   </span></li>
