@@ -542,12 +542,20 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-nds-red">
-            <div className="flex w-full items-center py-20 justify-center">
+            <div className="flex w-full items-center pt-20 pb-8 justify-center">
               <img
                 src="/theme/logo.svg"
                 alt="Next Design Summit logo"
                 className="h-12"
               />
+            </div>
+            <div className="w-full max-w-sm px-4 text-center mx-auto pb-8">
+              Masz pytania?
+              <br />
+              Napisz do nas:{" "}
+              <a href="mailto:kontakt@nextdesignsummit.pl">
+                kontakt@nextdesignsummit.pl
+              </a>
             </div>
             <div className="font-medium flex items-center justify-center gap-4 py-4 text-sm bg-nds-red">
               <Link href="/polityka-prywatnosci">Polityka prywatności</Link>
