@@ -61,7 +61,7 @@ export default function Order() {
           router.push("/success");
         }
       } catch (error) {
-        console.log(error.response.data);
+        console.log("error");
       }
     },
   });
