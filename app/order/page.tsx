@@ -39,6 +39,15 @@ export default function Order() {
         sameAddressInvoice: value.sameAddressInvoice,
         subscribe: false,
         smsSubscribe: false,
+        addressInvoice:
+          !value.sameAddressInvoice && value.addressInvoice
+            ? {
+                ...value.addressInvoice,
+                name: value.addressInvoice.firstName,
+                surname: value.addressInvoice.lastName,
+                country: value.addressInvoice.country || "pl",
+              }
+            : undefined,
       };
       try {
         const response = await create(data);
@@ -52,7 +61,7 @@ export default function Order() {
           router.push("/success");
         }
       } catch (error) {
-        console.log(error);
+        console.log(error.response.data);
       }
     },
   });
