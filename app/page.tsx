@@ -433,7 +433,7 @@ export default function Home() {
                       </div>
                       <div className="text-xs mb-2">{item.subtitle}</div>
                       <div className="font-semibold text-sm mb-2">
-                        "{item.description}"
+                        &quot;{item.description}&quot;
                       </div>
                       <div className="font-semibold text-sm flex gap-2">
                         <CalendarDaysIcon className="size-4" />
