@@ -1,7 +1,7 @@
 import Date from "@/components/header/Date";
 import Header from "@/components/header/Header";
 import Sygnet from "@/components/header/Sygnet";
-import { CheckIcon } from "@heroicons/react/24/outline";
+import { CheckIcon, CalendarDaysIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 export default function Home() {
@@ -381,6 +381,69 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-nds-red">
+            <div className="container">
+              <div className="text-xl py-10 font-semibold">
+                Kto za tym stoi?
+              </div>
+              <div className="text-h2 py-10 font-semibold text-right">
+                Największe nazwiska branży. Odsłaniamy stopniowo na social media
+                <br />
+                &gt; obserwuj nas
+              </div>
+              <a
+                href="https://www.instagram.com/next_design_summit/"
+                target="_blank"
+              >
+                <img src="/theme/instagram.png" className="h-6 ml-auto my-5" />
+              </a>
+            </div>
+
+            <div className="container grid gap-8 md:grid-cols-3 py-16 pb-32">
+              {[
+                {
+                  img: "pre-01.png",
+                  title: "Magdalena Miernik-Grzesiowska",
+                  subtitle: "Rzeczniczka patentowa i adwokatka IP",
+                  description:
+                    "Prawo własności intelektualnej  w projektowaniu wnętrz - prawo jako wsparcie i narzędzie w ręku projektanta",
+                },
+                {
+                  img: "pre-02.png",
+                  title: "Wojciech Plona",
+                  subtitle: "Doradca biznesowy i strateg finansowy",
+                  description:
+                    "Jak nie zjadać własnego zysku – finanse i strategie rozwoju pracowni projektowej",
+                },
+                {
+                  img: "pre-03.png",
+                  title: "Jarosław Gibas",
+                  subtitle:
+                    "Socjolog, autor książek o komunikacji  i rozwoju świadomości",
+                  description: "Trudny klient, czy trudna komunikacja?",
+                },
+              ].map((item, index) => (
+                <div key={item.title} className="gap-4 flex">
+                  <div className="h-36 w-36">
+                    <img src={`/theme/${item.img}`} className="size-36" />
+                  </div>
+                  <div className="flex-1 flex items-center h-full">
+                    <div>
+                      <div className="font-semibold text-sm mb-2">
+                        {item.title}
+                      </div>
+                      <div className="text-xs mb-2">{item.subtitle}</div>
+                      <div className="font-semibold text-sm mb-2">
+                        "{item.description}"
+                      </div>
+                      <div className="font-semibold text-sm flex gap-2">
+                        <CalendarDaysIcon className="size-4" />
+                        <span className="">07.11.2025</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
             <div className="container text-nds-black py-16 pt-32">
               <div className="text-h2 text-center pb-10">Co zyskasz?</div>
               <div className="grid md:grid-cols-3 gap-8">
