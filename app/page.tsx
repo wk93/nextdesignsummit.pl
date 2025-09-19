@@ -302,11 +302,6 @@ export default function Home() {
                       "Przewidywania, zmiany, kompetencje przyszłości.",
                   },
                   {
-                    time: "16:50",
-                    name: "Finałowy stand-up branżowy",
-                    description: "",
-                  },
-                  {
                     time: "17:20–21:00",
                     name: "Networking zamknięty",
                     description:
@@ -398,7 +393,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="container grid gap-8 md:grid-cols-3 py-16 pb-32">
+            <div className="container grid gap-8 md:grid-cols-2 py-16 pb-32">
               {[
                 {
                   img: "pre-01.png",
@@ -413,6 +408,13 @@ export default function Home() {
                   subtitle: "Doradca biznesowy i strateg finansowy",
                   description:
                     "Jak nie zjadać własnego zysku – finanse i strategie rozwoju pracowni projektowej",
+                },
+                {
+                  img: "pre-04.png",
+                  title: "Paweł Pilarczyk",
+                  subtitle: "Dziennikarz technologiczny",
+                  description:
+                    "AI – nie zabierze Ci pracy, jeśli nauczysz się na niej surfować",
                 },
                 {
                   img: "pre-03.png",
