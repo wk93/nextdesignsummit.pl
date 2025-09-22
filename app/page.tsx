@@ -1,6 +1,7 @@
 import Date from "@/components/header/Date";
 import Header from "@/components/header/Header";
 import Sygnet from "@/components/header/Sygnet";
+import Slider from "@/components/layout/Slider";
 import { CheckIcon, CalendarDaysIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
@@ -393,58 +394,67 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="container grid gap-8 md:grid-cols-2 py-16 pb-32">
-              {[
-                {
-                  img: "pre-01.png",
-                  title: "Magdalena Miernik-Grzesiowska",
-                  subtitle: "Rzeczniczka patentowa i adwokatka IP",
-                  description:
-                    "Prawo własności intelektualnej  w projektowaniu wnętrz - prawo jako wsparcie i narzędzie w ręku projektanta",
-                },
-                {
-                  img: "pre-02.png",
-                  title: "Wojciech Plona",
-                  subtitle: "Doradca biznesowy i strateg finansowy",
-                  description:
-                    "Jak nie zjadać własnego zysku – finanse i strategie rozwoju pracowni projektowej",
-                },
-                {
-                  img: "pre-04.png",
-                  title: "Paweł Pilarczyk",
-                  subtitle: "Dziennikarz technologiczny",
-                  description:
-                    "AI – nie zabierze Ci pracy, jeśli nauczysz się na niej surfować",
-                },
-                {
-                  img: "pre-03.png",
-                  title: "Jarosław Gibas",
-                  subtitle:
-                    "Socjolog, autor książek o komunikacji  i rozwoju świadomości",
-                  description: "Trudny klient, czy trudna komunikacja?",
-                },
-              ].map((item, index) => (
-                <div key={item.title} className="gap-4 flex">
-                  <div className="h-36 w-36">
-                    <img src={`/theme/${item.img}`} className="size-36" />
-                  </div>
-                  <div className="flex-1 flex items-center h-full">
-                    <div>
-                      <div className="font-semibold text-sm mb-2">
-                        {item.title}
-                      </div>
-                      <div className="text-xs mb-2">{item.subtitle}</div>
-                      <div className="font-semibold text-sm mb-2">
-                        &quot;{item.description}&quot;
-                      </div>
-                      <div className="font-semibold text-sm flex gap-2">
-                        <CalendarDaysIcon className="size-4" />
-                        <span className="">07.11.2025</span>
+            <div className="container py-16 pb-32">
+              <Slider>
+                {[
+                  {
+                    img: "pre-01.png",
+                    title: "Magdalena Miernik-Grzesiowska",
+                    subtitle: "Rzeczniczka patentowa i adwokatka IP",
+                    description:
+                      "Prawo własności intelektualnej  w projektowaniu wnętrz - prawo jako wsparcie i narzędzie w ręku projektanta",
+                  },
+                  {
+                    img: "pre-02.png",
+                    title: "Wojciech Plona",
+                    subtitle: "Doradca biznesowy i strateg finansowy",
+                    description:
+                      "Jak nie zjadać własnego zysku – finanse i strategie rozwoju pracowni projektowej",
+                  },
+                  {
+                    img: "pre-04.png",
+                    title: "Paweł Pilarczyk",
+                    subtitle: "Dziennikarz technologiczny",
+                    description:
+                      "AI – nie zabierze Ci pracy, jeśli nauczysz się na niej surfować",
+                  },
+                  {
+                    img: "pre-03.png",
+                    title: "Jarosław Gibas",
+                    subtitle:
+                      "Socjolog, autor książek o komunikacji  i rozwoju świadomości",
+                    description: "Trudny klient, czy trudna komunikacja?",
+                  },
+                  {
+                    img: "pre-05.png",
+                    title: "Dagmara Brzezińska",
+                    subtitle: "Lidera sprzedaży  i podcasterka Vogue Polska",
+                    description:
+                      "Zaufanie i odwaga - prawdziwa waluta przywództwa",
+                  },
+                ].map((item, index) => (
+                  <div key={item.title} className="gap-4 flex">
+                    <div className="h-36 w-36">
+                      <img src={`/theme/${item.img}`} className="size-36" />
+                    </div>
+                    <div className="flex-1 flex items-center h-full">
+                      <div>
+                        <div className="font-semibold text-sm mb-2">
+                          {item.title}
+                        </div>
+                        <div className="text-xs mb-2">{item.subtitle}</div>
+                        <div className="font-semibold text-sm mb-2">
+                          &quot;{item.description}&quot;
+                        </div>
+                        <div className="font-semibold text-sm flex gap-2">
+                          <CalendarDaysIcon className="size-4" />
+                          <span className="">07.11.2025</span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </Slider>
             </div>
             <div className="container text-nds-black py-16 pt-32">
               <div className="text-h2 text-center pb-10">Co zyskasz?</div>
