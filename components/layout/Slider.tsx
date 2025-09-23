@@ -16,7 +16,7 @@ const Slider: React.FC<Props> = ({ children }) => {
     <div className="relative">
       <Swiper
         spaceBetween={32}
-        slidesPerView={3}
+        slidesPerView={1}
         breakpoints={{
           768: {
             slidesPerView: 2,
